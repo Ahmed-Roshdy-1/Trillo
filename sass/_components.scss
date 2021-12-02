@@ -3,20 +3,60 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 /////////////////////////////////////////////////
 // Search
 .search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--Grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 35rem;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--Grey-light-3);
+    }
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--Grey-dark-3);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--Grey-light-3);
   }
 
   &__button {
+    border: none;
+    background-color: var(--Grey-light-2);
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--Grey-dark-3);
   }
 }
 

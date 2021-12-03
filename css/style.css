@@ -269,5 +269,20 @@ body {
       justify-content: space-between; }
     .container .content .hetel-view {
       background-color: #fff;
-      height: 80rem;
       flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--Grey-light-1); }
+
+.discription {
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+  background-color: #fff;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.08); }
+
+.user-reviews {
+  flex: 1; }

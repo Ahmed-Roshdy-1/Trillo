@@ -172,6 +172,21 @@ body {
   text-align: center;
   padding: 2.5rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%; }
+
+.overview {
+  display: flex;
+  justify-content: space-between; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--Primary); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -182,7 +197,7 @@ body {
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: solid 0.5px var(--Grey-light-2);
+    border-bottom: var(--Grey-light-2);
     display: flex;
     justify-content: space-between;
     align-items: center; }

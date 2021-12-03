@@ -180,3 +180,49 @@
   text-align: center;
   padding: 2.5rem;
 }
+
+/////////////////////////////////////@include///////////////////@include
+
+//////////////////////////////////////////////////@include
+// Gallery
+
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+  }
+}
+
+/////////////////////////////////////@include
+// Hotel overview
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  &__heading {
+  }
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--Primary);
+  }
+
+  &__icon-location {
+  }
+
+  &__location {
+  }
+
+  &__rating {
+    &-average {
+    }
+
+    &-count {
+    }
+  }
+}
